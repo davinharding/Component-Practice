@@ -37,11 +37,12 @@ a.to-top, a.to-top:visited {
 NAVIGATION
 ******************************************************/
 nav {
-  background-color: rgb(255, 255, 255);
+  /* background-color: #1B2355; */
+
 }
 
 nav h1, nav a, nav a:visited {
-  color: #E8ECEF;
+  color: white;
 }
 
 nav a {
@@ -55,7 +56,7 @@ nav h1 {
 }
 
 nav ul {
-  background-color: rgb(255, 255, 255);
+  background-color: #1B2355;
   padding: 0;
   text-align: center;
   font-size: 0;
@@ -63,14 +64,14 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  width: 19vw;
-  font-size: 1rem;
-  margin: 5px auto;
+  width: 17vw;
+  font-size: 1.5rem;
+  margin: 10px auto;
   border-right: 1px solid #E79294;
 }
 
 nav ul li:first-of-type {
-  margin-left: 2.5vw;
+  /* margin-left: 2.5vw; */
 }
 
 nav ul li:last-of-type {
@@ -99,7 +100,7 @@ HOME
   position: relative;
   top: 30%;
   background-color: rgba(160, 204, 227, 0.5);
-  color: black !important;
+  color: #E8ECEF;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2355+0,1b2355+100&0+0,0.7+16,1+52,0.7+85,0+100 */
   background: -moz-linear-gradient(left, rgba(27,35,85,0) 0%, rgba(27,35,85,0.7) 16%, rgba(27,35,85,1) 52%, rgba(27,35,85,0.7) 85%, rgba(27,35,85,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(27,35,85,0) 0%,rgba(27,35,85,0.7) 16%,rgba(27,35,85,1) 52%,rgba(27,35,85,0.7) 85%,rgba(27,35,85,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -136,37 +137,48 @@ PROJECTS
 }
 
 div.portfolio-img {
+
   height: 20vh;
   background-size: cover;
   background-position: center 15%;
+
 }
 
 section#projects > div {
   padding: 10px 0 10px 0;
+  display: inline-block;
+  width: 45%;
 }
 
 section#projects > div:nth-child(odd) {
-  background-color: #E8ECEF
+  background-color: #E8ECEF;
+  border: solid 0.5px;
+
 }
 
 section#projects > div:nth-child(even) {
-  background-color: #BAC0BA
+  background-color: #BAC0BA;
+    border: solid 0.5px;
 }
 
 div.iron-man {
   background-image: url(./images/IronMan.jpg);
+    border: solid 0.5px;
 }
 
 .phoenix {
   background-image: url(./images/Phoenix.jpg);
+    border: solid 0.5px;
 }
 
 .storm {
   background-image: url(./images/Storm.jpg);
+    border: solid 0.5px;
 }
 
 .gambit {
   background-image: url(./images/Gambit.jpg);
+    border: solid 0.5px;
 }
 
 /******************************************************
@@ -174,7 +186,7 @@ RESUME
 ******************************************************/
 #resume {
   padding-top: 10px;
-  padding-right: 10vw;
+  text-align: center;
 }
 
 #resume h1 {
@@ -212,6 +224,11 @@ RESUME
   box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
 }
 
+.resumestuff {
+  text-align: center;
+}
+
+
 /******************************************************
 CONTACT AND MEDIA
 ******************************************************/
@@ -224,16 +241,24 @@ CONTACT AND MEDIA
   text-align: center;
 }
 
+#contact header p {
+  text-align: center;
+}
+
 #contact form {
   width: 80%;
   margin-left: 10%;
+  text-align: center;
 }
 
 #contact input, #contact textarea {
   width: 95%;
+  height: 50px;
+  border: solid 2px;
   border-radius: 5px;
   border-color: #1B2355;
   border-width: 1px;
+  margin-top: 10px;
 }
 
 #contact input:focus, #contact textarea:focus {
@@ -243,18 +268,22 @@ CONTACT AND MEDIA
 
 #contact label, #contact input {
   display: block;
+  margin-top: 10px;
 }
 
 #contact input[type="submit"] {
   background-color: #F66464;
   border-radius: 5px;
-  border-style: solid;
   border-color: #F66464;
 }
 
 #contact input[type="submit"]:active {
   background-color: #c33f3f;
   border-color: #E79294
+}
+
+.mail {
+  padding-top:10px;
 }
 
 aside#social {
@@ -272,6 +301,10 @@ aside#social a {
   text-decoration: none;
 }
 
+.copyright > p {
+  margin-top: 40px;
+  text-align: center;
+}
 
 /******************************************************/
                  /*MEDIA QUERIES*/
@@ -280,7 +313,7 @@ NAVIGATION
 ******************************************************/
 @media only screen and (min-width: 769px) {
   body {
-    background-color: lightblue;
+    background-color: rgb(140, 212, 203);
   }
 }
 

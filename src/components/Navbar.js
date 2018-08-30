@@ -5,10 +5,10 @@ class Navbar extends Component {
         return (
             <nav>
               <ul>
-                  <li>Home</li>
-                  <li>About Me</li>
-                  <li>Resume</li>
-                  <li>Portfolio</li>
+                  <li><a href="#about-me">About Me</a></li>
+                  <li><a href="#resume">Resume</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact-me">Contact Me!</a></li>
               </ul>
               <hr></hr>
             </nav>

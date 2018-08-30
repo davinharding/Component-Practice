@@ -5,10 +5,15 @@ import Project from './Project.js'
 class Projects extends Component {
     render() {
         return (
-            <div>
+            <div id="portfolio">
                 {
                     projects.allProjects.map(function(e) {
-                        return <Project imgName= {e.imgName} title={e.title} description={e.description}/>;
+                        return <Project 
+                        imgName= {e.imgName} 
+                        title={e.title} 
+                        description={e.description}
+                        key = {e.title}
+                        />;
                     })
                 }
                 
